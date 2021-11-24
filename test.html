@@ -1,0 +1,140 @@
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	
+</head>
+
+<body id="body">
+	<script>
+		let since = Date.now();
+
+		let table = document.createElement('TABLE');
+
+		$("#body").append(table);
+		$(table).attr("border", 1);
+
+
+
+
+
+		// document.getElementById('body').appendChild(table);
+		// table.setAttribute('border', '1');
+
+
+		let tr1 = document.createElement('tr');
+		$(table).append(tr1);
+
+		// table.appendChild(tr1);
+
+		let th1 = document.createElement('th');
+		let th2 = document.createElement('th');
+		let th3 = document.createElement('th');
+		let th4 = document.createElement('th');
+		let th5 = document.createElement('th');
+
+
+		$(th1).html('A');
+		$(th2).html('B');
+		$(th3).html('C');
+		$(th4).html('D');
+		$(th5).html('E');
+
+		$(th5).attr("colspan", 3);
+		$(th5).attr("rowspan", 2);
+
+
+		
+
+
+		$(tr1).append(th1);
+		$(tr1).append(th2);
+		$(tr1).append(th3);
+		$(tr1).append(th4);
+		$(tr1).append(th5);
+
+
+
+		
+
+		let th6 = document.createElement('th');
+		let th7 = document.createElement('th');
+		let tr2 = document.createElement('tr');
+		$(table).append(tr2);
+
+		$(th6).attr("colspan", 3);
+
+		$(th6).html('F');
+		$(th7).html('G');
+
+
+		
+		$(tr2).append(th6);
+		$(tr2).append(th7);
+
+
+		
+
+
+		let th8 = document.createElement('th');
+		let th9 = document.createElement('th');
+		let th10 = document.createElement('th');
+		let th11 = document.createElement('th');
+		let th12 = document.createElement('th');
+		let th13 = document.createElement('th');
+
+		let tr3 = document.createElement('tr');
+		$(table).append(tr3);
+
+		$(th8).html('H');
+		$(th9).html ('I');
+		$(th10).html ('J');
+		$(th11).html ('K');
+		$(th12).html ('L');
+		$(th13).html ('M');
+
+		$(th12).attr("colspan", 2);
+		$(th12).attr("rowspan", 2);
+
+
+		
+
+
+		$(tr3).append(th8);
+		$(tr3).append(th9);
+		$(tr3).append(th10);
+		$(tr3).append(th11);
+		$(tr3).append(th12);
+		$(tr3).append(th13);
+
+
+
+
+		
+
+		let th14 = document.createElement('th');
+		let th15 = document.createElement('th');
+		let th16 = document.createElement('th');
+		let th17 = document.createElement('th');
+		let tr4 = document.createElement('tr');
+		$(table).append(tr4);
+
+		$(th14).html('O');
+		$(th15).html('P');
+		$(th16).html('Q');
+		$(th16).attr("colspan", 2);
+		$(th17).html('N');
+
+		$(tr4).append(th14);
+		$(tr4).append(th15);
+		$(tr4).append(th16);
+		$(tr4).append(th17);	
+
+
+
+		
+	</script>
+</body>
+
+</html>

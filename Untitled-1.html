@@ -1,0 +1,107 @@
+<html>
+
+<head>
+	<meta charset="utf-8" />
+</head>
+
+<body id="body">
+	<script>
+		let since = Date.now();
+
+		let table = document.createElement('TABLE');
+		document.getElementById('body').appendChild(table);
+		table.setAttribute('border', '1');
+
+
+		let tr1 = document.createElement('tr');
+		table.appendChild(tr1);
+
+		let th1 = document.createElement('th');
+		let th2 = document.createElement('th');
+		let th3 = document.createElement('th');
+		let th4 = document.createElement('th');
+		let th5 = document.createElement('th');
+
+
+		th1.innerHTML = "A";
+		th2.innerHTML = "B";
+		th3.innerHTML = "C";
+		th4.innerHTML = "D";
+
+		th5.innerHTML = "E";
+		th5.setAttribute('colspan', '3');
+		th5.setAttribute('rowspan', '2');
+
+		tr1.appendChild(th1);
+		tr1.appendChild(th2);
+		tr1.appendChild(th3);
+		tr1.appendChild(th4);
+		tr1.appendChild(th5);
+
+
+		// tr1.appendChild(th5).innerHTML('e').setAttribute('rowspan','3').setAttribute('colspan','3');
+
+		let th6 = document.createElement('th');
+		let th7 = document.createElement('th');
+		let tr2 = document.createElement('tr');
+		table.appendChild(tr2);
+
+		th6.setAttribute('colspan', '3');
+		th6.innerHTML = 'F';
+		th7.innerHTML = 'G';
+
+		tr2.appendChild(th6);
+		tr2.appendChild(th7);
+
+
+		let th8 = document.createElement('th');
+		let th9 = document.createElement('th');
+		let th10 = document.createElement('th');
+		let th11 = document.createElement('th');
+		let th12 = document.createElement('th');
+		let th13 = document.createElement('th');
+
+		let tr3 = document.createElement('tr');
+		table.appendChild(tr3);
+
+		th8.innerHTML = 'H';
+		th9.innerHTML = 'I';
+		th10.innerHTML = 'J';
+		th11.innerHTML = 'K';
+		th12.innerHTML = 'L';
+		th13.innerHTML = 'M';
+		th12.setAttribute('colspan', '2');
+		th12.setAttribute('rowspan', '2');
+
+		tr3.appendChild(th8);
+		tr3.appendChild(th9);
+		tr3.appendChild(th10);
+		tr3.appendChild(th11);
+		tr3.appendChild(th12);
+		tr3.appendChild(th13);
+
+		let th14 = document.createElement('th');
+		let th15 = document.createElement('th');
+		let th16 = document.createElement('th');
+		let th17 = document.createElement('th');
+
+		let tr4 = document.createElement('tr');
+		table.appendChild(tr4);
+
+		th14.innerHTML = 'O';
+		th15.innerHTML = 'P';
+		th16.innerHTML = 'Q';
+
+		th16.setAttribute('colspan', '2');
+		// th16.setAttribute('rowspan', '2');
+
+		th17.innerHTML = 'N';
+
+		tr4.appendChild(th14);
+		tr4.appendChild(th15);
+		tr4.appendChild(th16);
+		tr4.appendChild(th17);
+	</script>
+</body>
+
+</html>
